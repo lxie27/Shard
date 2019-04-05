@@ -7,15 +7,18 @@ A Minimum Viable Product (MVP) is the smallest subset of features that you consi
 Make a list below of the features you consider to be in your MVP. Then make a list of features that are 'stretch goals' that you think you can achieve. You should be able to achieve all of your MVP features, and a partial subset of your stretch goals.
 
 (**TODO**: Edit these)
+Option 2: "Shard" 2D physics engine
 
 (MVP) Minimal Subset of features you **will** definitely implement:
-- *feature 1*
-- *feature 2*
-- *etc.*
+- Take in any shape given bounding x & y values, split it into triangles
+- Basic physics: gravity, collisions, friction, destruction, etc. that demonstrate how objects interact with each other
+- Tech demo showing custom shapes being made in real-time and acting on each other, controllable with mouse
 
 Strecth Goals:
-- *features 1*
-- *feature 2*
-- *etc.*
+- Puzzle game featuring physics engine as main draw (e.g. brick-breaker)
+- Advanced physics: 2.5d physics (z axis, depth)
+- Splicing objects, internal forces (ex: clicking the center of a triangle will produce an explosion that fractures it along it's weakest spots and create forces on that triangle)
+- Audio!
+
 
 Note: It is possible you do not hit all of your stretch goals. You should not edit this document to attempt to make your plan look perfect either.
