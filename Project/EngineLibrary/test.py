@@ -10,14 +10,14 @@
 # You will see `python3.5-config --includes` for example which corresponds
 # to which version of python you are building.
 # (In fact, run `python3.5-config --includes` in the terminal to see what it does!)
-import mygameengine
+import shard
 
 # Now use some python libraries for random numbers!
 import random
 
 
 # Initialize SDL
-test = mygameengine.SDLGraphicsProgram(400,400)
+test = shard.SDLGraphicsProgram(400,400)
 
 # Our main game loop
 # Note: This is a simple game that loops for 20 iterations and then
