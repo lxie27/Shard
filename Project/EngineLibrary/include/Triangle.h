@@ -14,6 +14,8 @@ public:
 	~Triangle();
 	Triangle(Point a, Point b, Point c);
 	
+	void update();
+
 	double getArea();
 	double getPerimeter();
 

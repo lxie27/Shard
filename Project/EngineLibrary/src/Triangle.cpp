@@ -8,9 +8,20 @@ using namespace std;
 Triangle::~Triangle() {}
 Triangle::Triangle(Point a, Point b, Point c) : a(a), b(b), c(c) {}
 
+void Triangle::update() {
+	a.x = a.x + getForce().x;
+	b.x = b.x + getForce().x;
+	c.x = c.x + getForce().x;
+
+	a.y = a.y + getForce().y;
+	b.y = b.y + getForce().y;
+	c.y = c.y + getForce().y;
+}
+
 double Triangle::getArea() {
 	return ((a.x * (b.y - c.y) + b.x * (c.y - a.y) + c.x * (a.y - b.y)) / 2);
 }
+
 double Triangle::getPerimeter() {
 	return (sqrt(pow((a.x - b.x), 2.0) + pow((a.y - b.y), 2.0)) +
 		sqrt(pow((b.x - c.x), 2.0) + pow((b.y - c.y), 2.0)) +

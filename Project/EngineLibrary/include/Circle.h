@@ -14,6 +14,8 @@ public:
 	~Circle();
 	Circle(Point cen, double rad);
 
+	void update();
+
 	double getArea();
 	double getPerimeter();
 

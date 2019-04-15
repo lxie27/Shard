@@ -15,6 +15,8 @@ public:
 	//Convention: a is the TL point, b is TR point, c is BL point, d is BR point
 	Quad(Point a, Point b, Point c, Point d);
 
+	void update();
+
 	double getArea();
 	double getPerimeter();
 

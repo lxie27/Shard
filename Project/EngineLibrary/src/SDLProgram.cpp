@@ -88,14 +88,11 @@ bool SDLProgram::init()
 
 void SDLProgram::close()
 {
-
 	//Destroy window	
 	SDL_DestroyRenderer(gRenderer);
 	SDL_DestroyWindow(gWindow);
 	gWindow = NULL;
 	gRenderer = NULL;
-
-
 
 	//Quit SDL subsystems
 	SDL_Quit();

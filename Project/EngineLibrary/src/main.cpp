@@ -147,7 +147,7 @@ SDL_Window* SDLGraphicsProgram::getSDLWindow() {
 }
 
 // Okay, render our rectangles!
-void SDLGraphicsProgram::DrawRectangle(Quad rect) {
+void SDLGraphicsProgram::DrawRectangle(Quad& rect) {
 	//Point center = Point((rect.b.x - rect.a.x) / 2, (rect.b.y - rect.d.y) / 2);
 	int width = rect.b.x - rect.a.x;
 	int height = rect.b.y - rect.d.y;

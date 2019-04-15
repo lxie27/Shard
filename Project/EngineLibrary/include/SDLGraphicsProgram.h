@@ -25,9 +25,6 @@
 #include <sstream>
 #include <fstream>
 #include <vector>
-
-class Rectangle;
-
 class SDLGraphicsProgram {
 public:
 	// Constructor
@@ -53,7 +50,7 @@ public:
 	// Helper Function to Query OpenGL information.
 	void getOpenGLVersionInfo();
 
-	void DrawRectangle(Quad rect);
+	void DrawRectangle(Quad& rect);
 
 private:
 	// Screen dimension constants
