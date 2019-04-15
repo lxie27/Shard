@@ -19,5 +19,5 @@ AABB Circle::getBB() {
 }
 
 void Circle::setBB() {
-	bb = AABB(radius - center.x, radius + center.x, radius - center.y, radius + center.y);
+	bb = AABB(radius - center.x, radius - center.y, radius + center.x, radius + center.y);
 }

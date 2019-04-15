@@ -1,95 +1,3 @@
-/*
-#include "TinyMath.h"
-#include "../include/SDLProgram.h"
-//#include "SDLGraphicsProgram.h"
-
-
-int main(int argc, char* args[])
-{
-	//Start up SDL and create window
-	if (!SDLProgram::getInstance()->started())
-	{
-		printf("Failed to initialize!\n");
-	}
-	else
-	{
-		
-		//Main loop flag
-		bool quit = false;
-
-		//Event handler
-		SDL_Event e;
-		render();
-
-		//While application is running
-		while (!quit)
-		{
-			
-			unsigned int currentTime = SDL_GetTicks(); // Get frame start time
-			int elapsedTime = currentTime - lastTime;  // Time since last counted second
-			//Handle events on queue
-			while (SDL_PollEvent(&e) != 0)
-			{
-
-			}
-
-			update();
-			render();
-
-			// FPS Counter
-			fpsRendered++; // Count frame
-			// If one second has past, print the FPS and reset
-			if (elapsedTime >= 1000) {
-				//std::cout << fpsRendered << std::endl;
-				activeFPS = fpsRendered;
-				lastTime = currentTime;
-				fpsRendered = 0;
-			}
-
-			// If frame finished early delay
-			if (SDL_GetTicks() - currentTime < SCREEN_TICKS_PER_FRAME) {
-				SDL_Delay(SCREEN_TICKS_PER_FRAME - (SDL_GetTicks() - currentTime));
-			}
-
-		}
-		
-	}
-
-	//Free resources and close SDL
-	//SDLProgram::getInstance()->close();
-
-	return 0;
-}
-*/
-
-/*void render() {
-	SDL_Renderer* gRenderer = SDLProgram::getInstance()->getRenderer();
-
-	SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
-	SDL_RenderClear(gRenderer);
-
-	//GameControl::getInstance()->render();
-
-	//Update screen
-	SDL_RenderPresent(gRenderer);
-}
-
-// Update OpenGL
-void SDLGraphicsProgram::update() {
-	//GameControl::getInstance()->update(activeFPS);
-}*/
-
-#ifndef SDLGRAPHICSPROGRAM
-#define SDLGRAPHICSPROGRAM
-
-// ==================== Libraries ==================
-// Depending on the operating system we use
-// The paths to SDL are actually different.
-// The #define statement should be passed in
-// when compiling using the -D argument.
-// This gives an example of how a programmer
-// may support multiple platforms with different
-// dependencies.
 #if defined(LINUX) || defined(MINGW)
 #include <SDL2/SDL.h>
 #else // This works for Mac
@@ -98,49 +6,17 @@ void SDLGraphicsProgram::update() {
 
 // The glad library helps setup OpenGL extensions.
 #include <glad/glad.h>
+#include "SDLGraphicsProgram.h"
+
+#include "Point.h"
+#include "Quad.h"
+#include "Triangle.h"
 
 #include <iostream>
 #include <string>
 #include <sstream>
 #include <fstream>
 #include <vector>
-// Purpose:
-// This class sets up a full graphics program using SDL
-//
-//
-//
-class SDLGraphicsProgram {
-public:
-
-	// Constructor
-	SDLGraphicsProgram(int w, int h);
-	// Destructor
-	~SDLGraphicsProgram();
-	// Setup OpenGL
-	bool initGL();
-	// Clears the screen
-	void clear();
-	// Flips to new buffer
-	void flip();
-	// Delay rendering
-	void delay(int milliseconds);
-	// loop that runs forever
-	void loop();
-	// Get Pointer to Window
-	SDL_Window* getSDLWindow();
-	// Draw a simple rectangle
-	void DrawRectangle(int x, int y, int w, int h);
-
-private:
-	// Screen dimension constants
-	int screenHeight;
-	int screenWidth;
-	// The window we'll be rendering to
-	SDL_Window* gWindow;
-	// Our renderer
-	SDL_Renderer* gRenderer;
-};
-
 
 // Initialization function
 // Returns a true or false value based on successful completion of setup.
@@ -270,39 +146,34 @@ SDL_Window* SDLGraphicsProgram::getSDLWindow() {
 	return gWindow;
 }
 
-
 // Okay, render our rectangles!
-void SDLGraphicsProgram::DrawRectangle(int x, int y, int w, int h) {
-	SDL_Rect fillRect = { x,y,w,h };
+void SDLGraphicsProgram::DrawRectangle(Quad rect) {
+	//Point center = Point((rect.b.x - rect.a.x) / 2, (rect.b.y - rect.d.y) / 2);
+	int width = rect.b.x - rect.a.x;
+	int height = rect.b.y - rect.d.y;
+
+	SDL_Rect fillRect = { rect.a.x, rect.a.y, width, height };
 	SDL_SetRenderDrawColor(gRenderer, 0xFF, 0x00, 0x00, 0xFF);
 	SDL_RenderDrawRect(gRenderer, &fillRect);
 }
 
-// Include the pybindings
 #include <pybind11/pybind11.h>
 
 namespace py = pybind11;
 
-
-// Creates a macro function that will be called
-// whenever the module is imported into python
-// 'mygameengine' is what we 'import' into python.
-// 'm' is the interface (creates a py::module object)
-//      for which the bindings are created.
-//  The magic here is in 'template metaprogramming'
+// Creates a macro function that will be called shard
 PYBIND11_MODULE(shard, m){
-	m.doc() = "our game engine as a library"; // Optional docstring
-
+	py::class_<Point>(m, "Point")
+		.def(py::init<double, double>(), py::arg("x"), py::arg("y"));
+	py::class_<Quad>(m, "Quad")
+		.def(py::init<Point, Point, Point, Point>(), py::arg("a"), py::arg("b"), py::arg("c"), py::arg("d"));
+	py::class_<Triangle>(m, "Triangle")
+		.def(py::init<Point, Point, Point>(), py::arg("a"), py::arg("b"), py::arg("c"));
 	py::class_<SDLGraphicsProgram>(m, "SDLGraphicsProgram")
-			.def(py::init<int,int>(), py::arg("w"), py::arg("h"))   // our constructor
-			.def("clear", &SDLGraphicsProgram::clear) // Expose member methods
-			.def("delay", &SDLGraphicsProgram::delay)
-			.def("flip", &SDLGraphicsProgram::flip)
-			.def("loop", &SDLGraphicsProgram::loop)
-			.def("DrawRectangle", &SDLGraphicsProgram::DrawRectangle) ;
-// We do not need to expose everything to our users!
-//            .def("getSDLWindow", &SDLGraphicsProgram::getSDLWindow, py::return_value_policy::reference)
+		.def(py::init<int, int>(), py::arg("w"), py::arg("h"))   // our constructor
+		.def("clear", &SDLGraphicsProgram::clear) // Expose member methods
+		.def("delay", &SDLGraphicsProgram::delay)
+		.def("flip", &SDLGraphicsProgram::flip)
+		.def("loop", &SDLGraphicsProgram::loop)
+		.def("DrawRectangle", &SDLGraphicsProgram::DrawRectangle);
 }
-
-
-#endif

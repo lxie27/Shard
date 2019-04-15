@@ -1,10 +1,7 @@
-#ifndef Vector2_h
-#define Vector2_h
+#ifndef VECTOR2_H
+#define VECTOR2_H
 
 #include <cmath>
-
-// Forward references of each of the structs
-struct Vector2;
 
 // Vector2 performs vector operations with 2-dimensions
 // The purpose of this class is primarily for 2D graphics

@@ -1,6 +1,3 @@
-//#ifndef SDLGRAPHICSPROGRAM
-//#define SDLGRAPHICSPROGRAM
-
 // ==================== Libraries ==================
 // Depending on the operating system we use
 // The paths to SDL are actually different.
@@ -17,50 +14,16 @@
 
 // The glad library helps setup OpenGL extensions.
 #include <glad/glad.h>
-#include "../include/SDLGraphicsProgram.h"
+#include "SDLGraphicsProgram.h"
+
+#include "Point.h"
+#include "Rectangle.h"
 
 #include <iostream>
 #include <string>
 #include <sstream>
 #include <fstream>
 #include <vector>
-// Purpose:
-// This class sets up a full graphics program using SDL
-//
-//
-//
-class SDLGraphicsProgram {
-public:
-
-	// Constructor
-	SDLGraphicsProgram(int w, int h);
-	// Destructor
-	~SDLGraphicsProgram();
-	// Setup OpenGL
-	bool initGL();
-	// Clears the screen
-	void clear();
-	// Flips to new buffer
-	void flip();
-	// Delay rendering
-	void delay(int milliseconds);
-	// loop that runs forever
-	void loop();
-	// Get Pointer to Window
-	SDL_Window* getSDLWindow();
-	// Draw a simple rectangle
-	void DrawRectangle(int x, int y, int w, int h);
-
-private:
-	// Screen dimension constants
-	int screenHeight;
-	int screenWidth;
-	// The window we'll be rendering to
-	SDL_Window* gWindow;
-	// Our renderer
-	SDL_Renderer* gRenderer;
-};
-
 
 // Initialization function
 // Returns a true or false value based on successful completion of setup.
@@ -188,14 +151,6 @@ void SDLGraphicsProgram::loop() {
 // Get Pointer to Window
 SDL_Window* SDLGraphicsProgram::getSDLWindow() {
 	return gWindow;
-}
-
-
-// Okay, render our rectangles!
-void SDLGraphicsProgram::DrawRectangle(int x, int y, int w, int h) {
-	SDL_Rect fillRect = { x,y,w,h };
-	SDL_SetRenderDrawColor(gRenderer, 0xFF, 0x00, 0x00, 0xFF);
-	SDL_RenderDrawRect(gRenderer, &fillRect);
 }
 
 /*// Include the pybindings

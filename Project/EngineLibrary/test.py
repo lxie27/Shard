@@ -25,13 +25,28 @@ test = shard.SDLGraphicsProgram(400,400)
 print("Setting up game loop")
 for i in range(0,20):
     # Clear the screen
-    test.clear();
+    ##test.clear();
     # Generate random coordinates for our box
-    x = random.randint(1,400)
-    y = random.randint(1,400)
-    test.DrawRectangle(x,y,10,10);
+    ax = random.randint(1,200)
+    ay = random.randint(1,200)
+    bx = random.randint(200,400)
+    by = random.randint(1,200)
+    cx = random.randint(1,200)
+    cy = random.randint(200,400)
+    dx = random.randint(200,400)
+    dy = random.randint(200,400)
+    
+    a = shard.Point(ax, ay)
+    b = shard.Point(bx, by)
+    c = shard.Point(cx, cy)
+    d = shard.Point(dx, dy)
+
+    rect = shard.Quad(a, b, c, d)
+
+    test.DrawRectangle(rect)
+    
     # Add a little delay
-    test.delay(100);
+    test.delay(200);
     # Refresh the screen
     test.flip();
 

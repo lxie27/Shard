@@ -1,5 +1,6 @@
-#ifndef AABB_h
-#define AABB_h
+#pragma once
+#ifndef AABB_H
+#define AABB_H
 
 #include "Vector2.h"
 

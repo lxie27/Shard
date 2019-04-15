@@ -1,5 +1,6 @@
-#ifndef Triangle_h
-#define Triangle_h
+#pragma once
+#ifndef TRIANGLE_H
+#define TRIANGLE_H
 
 #include "Shape.h"
 #include "Point.h"

@@ -1,5 +1,5 @@
-#ifndef Circle_h
-#define Circle_h
+#ifndef CIRCLE_H
+#define CIRCLE_H
 
 #include "Shape.h"
 #include "Point.h"
