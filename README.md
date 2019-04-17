@@ -2,12 +2,12 @@
 
 ## Team
 
-Team Name: *Edit this to something cool here*
+Team Name: blank
 
 *TODO*:
 Update your Team member Names here (Up to 4).
 
-1. *my name is...*
+1. Leslie Xie
 2. *my name is...*
 3. *my name is...*
 4. *my name is...*
