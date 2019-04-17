@@ -6,7 +6,7 @@ Shard is a niche Python physics library written in C++, binded with pybind11. Th
 * Manually build the binary by navigating to EngineLibrary and run "sh mingw64build.py" in MinGW.
 
 ## Documentation
-* Access documentation [here](https://github.com/lxie27/Shard/blob/gh-pages/Docs/html/index.html)
+* Access documentation <a href="https://github.com/lxie27/Shard/blob/master/Docs/html/index.html">here</a>
 
 ## Post Mortem
 * MVP features were not completed. Therefore, the main objective would be to completely implement collsions, then the splicing of shapes. - Estimated time to complete this: 1 week
