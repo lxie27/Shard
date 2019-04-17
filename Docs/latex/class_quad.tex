@@ -1,0 +1,263 @@
+\hypertarget{class_quad}{}\section{Quad Class Reference}
+\label{class_quad}\index{Quad@{Quad}}
+
+
+{\ttfamily \#include $<$Quad.\+h$>$}
+
+Inheritance diagram for Quad\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_quad}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_quad_a5db77c0481b30c0b7c1014cc535284ad}{$\sim$\+Quad}} ()
+\begin{DoxyCompactList}\small\item\em The deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_quad_a42dd3b1c1f81ec0f0e5c41116cb92d05}{Quad}} (\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_quad_a6d2e2a508ba54fd2c0d286850d2fc99f}{a}}, \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_quad_a429f3bf619a9e29f56e03c701001d508}{b}}, \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_quad_a90ece951ddbf1c23049a912e26068680}{c}}, \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_quad_ac1855601f7ffc0f7d77f06ee60d541d6}{d}})
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quad_a5e8eed8827894a4cf680b827a90d9d28}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the \mbox{\hyperlink{class_quad}{Quad}}\textquotesingle{}s Points based on its current force. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_quad_abd7230629190e09ee3bdadefb6784320}{get\+Area}} ()
+\begin{DoxyCompactList}\small\item\em Gets the area of the \mbox{\hyperlink{class_quad}{Quad}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_quad_a8d438e2844a4a155ed61addfab1a2868}{get\+Perimeter}} ()
+\begin{DoxyCompactList}\small\item\em Gets the perimeter of the \mbox{\hyperlink{class_quad}{Quad}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} \mbox{\hyperlink{class_quad_a8b7be43a01fb3263d36b0eb2f5961ccd}{get\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_quad}{Quad}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quad_a8707911fc752adad20b07a9a77f4ba0e}{set\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_quad}{Quad}} based on its current coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quad_a9adb3dc8ea14c8d1f5bf7492c5ba18f7}{set\+Force}} (\mbox{\hyperlink{struct_vector2}{Vector2}} \&f)
+\begin{DoxyCompactList}\small\item\em Sets the force of the \mbox{\hyperlink{class_quad}{Quad}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quad_a1f0a30842d8b35a8402baa8bb76384ad}{add\+Force}} (\mbox{\hyperlink{struct_vector2}{Vector2}} \&f)
+\begin{DoxyCompactList}\small\item\em Adds to the force of the \mbox{\hyperlink{class_quad}{Quad}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_quad_abc8023f3883c6fe4391e24418a4258ab}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\begin{DoxyCompactList}\small\item\em Renders the \mbox{\hyperlink{class_quad}{Quad}}, delegated by \mbox{\hyperlink{class_shape}{Shape}} inheritance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_quad_a6d2e2a508ba54fd2c0d286850d2fc99f}{a}}
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_quad_a429f3bf619a9e29f56e03c701001d508}{b}}
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_quad_a90ece951ddbf1c23049a912e26068680}{c}}
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_quad_ac1855601f7ffc0f7d77f06ee60d541d6}{d}}
+\item 
+\mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} \mbox{\hyperlink{class_quad_a2f4674ea8313163f9ff4a7cbe707fae3}{bb}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_quad_a5db77c0481b30c0b7c1014cc535284ad}\label{class_quad_a5db77c0481b30c0b7c1014cc535284ad}} 
+\index{Quad@{Quad}!````~Quad@{$\sim$Quad}}
+\index{````~Quad@{$\sim$Quad}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{$\sim$Quad()}{~Quad()}}
+{\footnotesize\ttfamily Quad\+::$\sim$\+Quad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The deconstructor. 
+
+\mbox{\Hypertarget{class_quad_a42dd3b1c1f81ec0f0e5c41116cb92d05}\label{class_quad_a42dd3b1c1f81ec0f0e5c41116cb92d05}} 
+\index{Quad@{Quad}!Quad@{Quad}}
+\index{Quad@{Quad}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{Quad()}{Quad()}}
+{\footnotesize\ttfamily Quad\+::\+Quad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{a,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{b,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{c,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{d }\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The topleft corner of the \mbox{\hyperlink{class_quad}{Quad}} \\
+\hline
+{\em b} & The topright corner of the \mbox{\hyperlink{class_quad}{Quad}} \\
+\hline
+{\em c} & The bottomleft corner of the \mbox{\hyperlink{class_quad}{Quad}} \\
+\hline
+{\em d} & The bottomright corner of the \mbox{\hyperlink{class_quad}{Quad}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_quad}{Quad}} instance 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quad_a1f0a30842d8b35a8402baa8bb76384ad}\label{class_quad_a1f0a30842d8b35a8402baa8bb76384ad}} 
+\index{Quad@{Quad}!addForce@{addForce}}
+\index{addForce@{addForce}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{addForce()}{addForce()}}
+{\footnotesize\ttfamily void Quad\+::add\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2}{Vector2}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds to the force of the \mbox{\hyperlink{class_quad}{Quad}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The force to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_shape_a2fcffede033450a219278164b864e8a3}{Shape}}.
+
+\mbox{\Hypertarget{class_quad_abd7230629190e09ee3bdadefb6784320}\label{class_quad_abd7230629190e09ee3bdadefb6784320}} 
+\index{Quad@{Quad}!getArea@{getArea}}
+\index{getArea@{getArea}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily double Quad\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the area of the \mbox{\hyperlink{class_quad}{Quad}}. 
+
+\begin{DoxyReturn}{Returns}
+Returns w $\ast$ h = area. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_acec2178598665e96b85f1ac6a13a47b9}{Shape}}.
+
+\mbox{\Hypertarget{class_quad_a8b7be43a01fb3263d36b0eb2f5961ccd}\label{class_quad_a8b7be43a01fb3263d36b0eb2f5961ccd}} 
+\index{Quad@{Quad}!getBB@{getBB}}
+\index{getBB@{getBB}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{getBB()}{getBB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} Quad\+::get\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_quad}{Quad}}. 
+
+\begin{DoxyReturn}{Returns}
+Returns the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_quad}{Quad}}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_a2490226328b30c113a7f07e2edda5f94}{Shape}}.
+
+\mbox{\Hypertarget{class_quad_a8d438e2844a4a155ed61addfab1a2868}\label{class_quad_a8d438e2844a4a155ed61addfab1a2868}} 
+\index{Quad@{Quad}!getPerimeter@{getPerimeter}}
+\index{getPerimeter@{getPerimeter}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{getPerimeter()}{getPerimeter()}}
+{\footnotesize\ttfamily double Quad\+::get\+Perimeter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the perimeter of the \mbox{\hyperlink{class_quad}{Quad}}. 
+
+\begin{DoxyReturn}{Returns}
+Returns 2w + 2h = perimeter. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_a3918812ff3a143dabbeba2f650fb5e7c}{Shape}}.
+
+\mbox{\Hypertarget{class_quad_abc8023f3883c6fe4391e24418a4258ab}\label{class_quad_abc8023f3883c6fe4391e24418a4258ab}} 
+\index{Quad@{Quad}!render@{render}}
+\index{render@{render}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Quad\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renders the \mbox{\hyperlink{class_quad}{Quad}}, delegated by \mbox{\hyperlink{class_shape}{Shape}} inheritance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g\+Renderer} & The S\+D\+L\+\_\+\+Renderer of \mbox{\hyperlink{class_s_d_l_graphics_program}{S\+D\+L\+Graphics\+Program}}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_shape_a07881321ba401e7cdbd83b4f2b009e37}{Shape}}.
+
+\mbox{\Hypertarget{class_quad_a8707911fc752adad20b07a9a77f4ba0e}\label{class_quad_a8707911fc752adad20b07a9a77f4ba0e}} 
+\index{Quad@{Quad}!setBB@{setBB}}
+\index{setBB@{setBB}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{setBB()}{setBB()}}
+{\footnotesize\ttfamily void Quad\+::set\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_quad}{Quad}} based on its current coordinates. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a540779eb247ef00e4fb262f1f81e90d4}{Shape}}.
+
+\mbox{\Hypertarget{class_quad_a9adb3dc8ea14c8d1f5bf7492c5ba18f7}\label{class_quad_a9adb3dc8ea14c8d1f5bf7492c5ba18f7}} 
+\index{Quad@{Quad}!setForce@{setForce}}
+\index{setForce@{setForce}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{setForce()}{setForce()}}
+{\footnotesize\ttfamily void Quad\+::set\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2}{Vector2}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the force of the \mbox{\hyperlink{class_quad}{Quad}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The force to be set to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_shape_a76d8009348239dbf7426ae54f19844d2}{Shape}}.
+
+\mbox{\Hypertarget{class_quad_a5e8eed8827894a4cf680b827a90d9d28}\label{class_quad_a5e8eed8827894a4cf680b827a90d9d28}} 
+\index{Quad@{Quad}!update@{update}}
+\index{update@{update}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Quad\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the \mbox{\hyperlink{class_quad}{Quad}}\textquotesingle{}s Points based on its current force. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a303c47b13b9339dc021e040bbba72651}{Shape}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_quad_a6d2e2a508ba54fd2c0d286850d2fc99f}\label{class_quad_a6d2e2a508ba54fd2c0d286850d2fc99f}} 
+\index{Quad@{Quad}!a@{a}}
+\index{a@{a}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Quad\+::a}
+
+\mbox{\Hypertarget{class_quad_a429f3bf619a9e29f56e03c701001d508}\label{class_quad_a429f3bf619a9e29f56e03c701001d508}} 
+\index{Quad@{Quad}!b@{b}}
+\index{b@{b}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Quad\+::b}
+
+\mbox{\Hypertarget{class_quad_a2f4674ea8313163f9ff4a7cbe707fae3}\label{class_quad_a2f4674ea8313163f9ff4a7cbe707fae3}} 
+\index{Quad@{Quad}!bb@{bb}}
+\index{bb@{bb}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{bb}{bb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} Quad\+::bb}
+
+\mbox{\Hypertarget{class_quad_a90ece951ddbf1c23049a912e26068680}\label{class_quad_a90ece951ddbf1c23049a912e26068680}} 
+\index{Quad@{Quad}!c@{c}}
+\index{c@{c}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Quad\+::c}
+
+\mbox{\Hypertarget{class_quad_ac1855601f7ffc0f7d77f06ee60d541d6}\label{class_quad_ac1855601f7ffc0f7d77f06ee60d541d6}} 
+\index{Quad@{Quad}!d@{d}}
+\index{d@{d}!Quad@{Quad}}
+\subsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Quad\+::d}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project/\+Engine\+Library/include/\mbox{\hyperlink{_quad_8h}{Quad.\+h}}\item 
+Project/\+Engine\+Library/src/\mbox{\hyperlink{_quad_8cpp}{Quad.\+cpp}}\end{DoxyCompactItemize}

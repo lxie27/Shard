@@ -1,0 +1,211 @@
+\hypertarget{class_triangle}{}\section{Triangle Class Reference}
+\label{class_triangle}\index{Triangle@{Triangle}}
+
+
+{\ttfamily \#include $<$Triangle.\+h$>$}
+
+Inheritance diagram for Triangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_triangle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_triangle_a5199760a17454f4dc94c855a57e3a152}{$\sim$\+Triangle}} ()
+\begin{DoxyCompactList}\small\item\em The deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_triangle_a01caaa9f22c8dc0208f612f8f1738cd3}{Triangle}} (\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_triangle_a08d2940a819cebd3321beeebbaef389e}{a}}, \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_triangle_af4167c2fce79260b261531d0b0fd3798}{b}}, \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_triangle_a972f16cb46805d72e9421b3c42ebc980}{c}})
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_a7fbd07ca45c992b433e193f442993e54}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the \mbox{\hyperlink{class_quad}{Quad}}\textquotesingle{}s Points based on its current force. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_triangle_a19b449e6969b9288e189ced41c3aca40}{get\+Area}} ()
+\begin{DoxyCompactList}\small\item\em Gets the area of the \mbox{\hyperlink{class_quad}{Quad}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_triangle_a692f12975e5a86c757f9d73c0228070e}{get\+Perimeter}} ()
+\begin{DoxyCompactList}\small\item\em Gets the perimeter of the \mbox{\hyperlink{class_triangle}{Triangle}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} \mbox{\hyperlink{class_triangle_a6f8c4358b9aa4de071618729547f4fd5}{get\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_triangle}{Triangle}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_a857d761fa1f0b53b355d46be53a4796e}{set\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_triangle}{Triangle}} based on its current coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_a46ec1698397a34b08cd788e305dda75c}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\begin{DoxyCompactList}\small\item\em Renders the \mbox{\hyperlink{class_triangle}{Triangle}}, delegated by \mbox{\hyperlink{class_shape}{Shape}} inheritance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_triangle_a08d2940a819cebd3321beeebbaef389e}{a}}
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_triangle_af4167c2fce79260b261531d0b0fd3798}{b}}
+\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_triangle_a972f16cb46805d72e9421b3c42ebc980}{c}}
+\item 
+\mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} \mbox{\hyperlink{class_triangle_a71ce28afaa44e5b6c94a5150db358879}{bb}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_triangle_a5199760a17454f4dc94c855a57e3a152}\label{class_triangle_a5199760a17454f4dc94c855a57e3a152}} 
+\index{Triangle@{Triangle}!````~Triangle@{$\sim$Triangle}}
+\index{````~Triangle@{$\sim$Triangle}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{$\sim$Triangle()}{~Triangle()}}
+{\footnotesize\ttfamily Triangle\+::$\sim$\+Triangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The deconstructor. 
+
+\mbox{\Hypertarget{class_triangle_a01caaa9f22c8dc0208f612f8f1738cd3}\label{class_triangle_a01caaa9f22c8dc0208f612f8f1738cd3}} 
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{Triangle()}{Triangle()}}
+{\footnotesize\ttfamily Triangle\+::\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{a,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{b,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{c }\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The one corner of the \mbox{\hyperlink{class_triangle}{Triangle}} \\
+\hline
+{\em b} & The one corner of the \mbox{\hyperlink{class_triangle}{Triangle}} \\
+\hline
+{\em c} & The one corner of the \mbox{\hyperlink{class_triangle}{Triangle}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_triangle}{Triangle}} instance 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_triangle_a19b449e6969b9288e189ced41c3aca40}\label{class_triangle_a19b449e6969b9288e189ced41c3aca40}} 
+\index{Triangle@{Triangle}!getArea@{getArea}}
+\index{getArea@{getArea}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily double Triangle\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the area of the \mbox{\hyperlink{class_quad}{Quad}}. 
+
+\begin{DoxyReturn}{Returns}
+Returns area. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_acec2178598665e96b85f1ac6a13a47b9}{Shape}}.
+
+\mbox{\Hypertarget{class_triangle_a6f8c4358b9aa4de071618729547f4fd5}\label{class_triangle_a6f8c4358b9aa4de071618729547f4fd5}} 
+\index{Triangle@{Triangle}!getBB@{getBB}}
+\index{getBB@{getBB}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{getBB()}{getBB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} Triangle\+::get\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_triangle}{Triangle}}. 
+
+\begin{DoxyReturn}{Returns}
+Returns the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_triangle}{Triangle}}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_a2490226328b30c113a7f07e2edda5f94}{Shape}}.
+
+\mbox{\Hypertarget{class_triangle_a692f12975e5a86c757f9d73c0228070e}\label{class_triangle_a692f12975e5a86c757f9d73c0228070e}} 
+\index{Triangle@{Triangle}!getPerimeter@{getPerimeter}}
+\index{getPerimeter@{getPerimeter}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{getPerimeter()}{getPerimeter()}}
+{\footnotesize\ttfamily double Triangle\+::get\+Perimeter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the perimeter of the \mbox{\hyperlink{class_triangle}{Triangle}}. 
+
+\begin{DoxyReturn}{Returns}
+Returns perimeter. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_a3918812ff3a143dabbeba2f650fb5e7c}{Shape}}.
+
+\mbox{\Hypertarget{class_triangle_a46ec1698397a34b08cd788e305dda75c}\label{class_triangle_a46ec1698397a34b08cd788e305dda75c}} 
+\index{Triangle@{Triangle}!render@{render}}
+\index{render@{render}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Triangle\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renders the \mbox{\hyperlink{class_triangle}{Triangle}}, delegated by \mbox{\hyperlink{class_shape}{Shape}} inheritance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g\+Renderer} & The S\+D\+L\+\_\+\+Renderer of \mbox{\hyperlink{class_s_d_l_graphics_program}{S\+D\+L\+Graphics\+Program}}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_shape_a07881321ba401e7cdbd83b4f2b009e37}{Shape}}.
+
+\mbox{\Hypertarget{class_triangle_a857d761fa1f0b53b355d46be53a4796e}\label{class_triangle_a857d761fa1f0b53b355d46be53a4796e}} 
+\index{Triangle@{Triangle}!setBB@{setBB}}
+\index{setBB@{setBB}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{setBB()}{setBB()}}
+{\footnotesize\ttfamily void Triangle\+::set\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} of the \mbox{\hyperlink{class_triangle}{Triangle}} based on its current coordinates. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a540779eb247ef00e4fb262f1f81e90d4}{Shape}}.
+
+\mbox{\Hypertarget{class_triangle_a7fbd07ca45c992b433e193f442993e54}\label{class_triangle_a7fbd07ca45c992b433e193f442993e54}} 
+\index{Triangle@{Triangle}!update@{update}}
+\index{update@{update}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Triangle\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the \mbox{\hyperlink{class_quad}{Quad}}\textquotesingle{}s Points based on its current force. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a303c47b13b9339dc021e040bbba72651}{Shape}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_triangle_a08d2940a819cebd3321beeebbaef389e}\label{class_triangle_a08d2940a819cebd3321beeebbaef389e}} 
+\index{Triangle@{Triangle}!a@{a}}
+\index{a@{a}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Triangle\+::a}
+
+\mbox{\Hypertarget{class_triangle_af4167c2fce79260b261531d0b0fd3798}\label{class_triangle_af4167c2fce79260b261531d0b0fd3798}} 
+\index{Triangle@{Triangle}!b@{b}}
+\index{b@{b}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Triangle\+::b}
+
+\mbox{\Hypertarget{class_triangle_a71ce28afaa44e5b6c94a5150db358879}\label{class_triangle_a71ce28afaa44e5b6c94a5150db358879}} 
+\index{Triangle@{Triangle}!bb@{bb}}
+\index{bb@{bb}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{bb}{bb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} Triangle\+::bb}
+
+\mbox{\Hypertarget{class_triangle_a972f16cb46805d72e9421b3c42ebc980}\label{class_triangle_a972f16cb46805d72e9421b3c42ebc980}} 
+\index{Triangle@{Triangle}!c@{c}}
+\index{c@{c}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Triangle\+::c}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project/\+Engine\+Library/include/\mbox{\hyperlink{_triangle_8h}{Triangle.\+h}}\item 
+Project/\+Engine\+Library/src/\mbox{\hyperlink{_triangle_8cpp}{Triangle.\+cpp}}\end{DoxyCompactItemize}

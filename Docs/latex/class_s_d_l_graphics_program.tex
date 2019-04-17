@@ -1,0 +1,202 @@
+\hypertarget{class_s_d_l_graphics_program}{}\section{S\+D\+L\+Graphics\+Program Class Reference}
+\label{class_s_d_l_graphics_program}\index{SDLGraphicsProgram@{SDLGraphicsProgram}}
+
+
+{\ttfamily \#include $<$S\+D\+L\+Graphics\+Program.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_d_l_graphics_program_a976683178e086cd2a1a801fd9c501a7b}{S\+D\+L\+Graphics\+Program}} (int w, int h)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_s_d_l_graphics_program_a2504412e7eaa011a1116447eb4d5ec00}{$\sim$\+S\+D\+L\+Graphics\+Program}} ()
+\begin{DoxyCompactList}\small\item\em The deconstuctor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_s_d_l_graphics_program_a6cc65adc2dde4f2346839685c4e43ea9}{init\+GL}} ()
+\begin{DoxyCompactList}\small\item\em Initializer flag for \mbox{\hyperlink{class_s_d_l_graphics_program}{S\+D\+L\+Graphics\+Program}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a56942edfd4c5f45334ba55adb2558d35}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a1b2040042b2fc4bda09f365d7885e9a3}{flip}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a299c62853b3f28fc3930880fc4c128ba}{delay}} (int milliseconds)
+\begin{DoxyCompactList}\small\item\em Delays the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a67a6cb42ec9bce6245a617de62cfdc20}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the logic of the physics engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a118c0f825d3d2e8cb3fae0dc4ea1c13e}{render\+Shapes}} ()
+\begin{DoxyCompactList}\small\item\em Draws all the shapes in the physics engine. Delegates drawing to the shape type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_afdca0d5835b36a1b18d7eac69056c6ff}{loop}} ()
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{class_s_d_l_graphics_program_a42e9554ec5b497551530bd5a8ca9585f}{get\+S\+D\+L\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Gets the S\+D\+L\+\_\+\+Window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a7710ed9e68081310be98527fa45fd5dd}{get\+Open\+G\+L\+Version\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_add4ecb861302c3e883e5630aa86221ce}{add\+Shape}} (\mbox{\hyperlink{class_shape}{Shape}} $\ast$q)
+\begin{DoxyCompactList}\small\item\em Adds a shape to the physics engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_aeb4a2f57b396a2a053a80ff0cc41149d}{set\+Physics}} (\mbox{\hyperlink{class_physics}{Physics}} \&p)
+\begin{DoxyCompactList}\small\item\em Resets the physics engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_physics}{Physics}} \mbox{\hyperlink{class_s_d_l_graphics_program_ad79474da1a537585fb5359786b0d8e5d}{p\+Engine}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a976683178e086cd2a1a801fd9c501a7b}\label{class_s_d_l_graphics_program_a976683178e086cd2a1a801fd9c501a7b}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{SDLGraphicsProgram()}{SDLGraphicsProgram()}}
+{\footnotesize\ttfamily S\+D\+L\+Graphics\+Program\+::\+S\+D\+L\+Graphics\+Program (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The screen width of the S\+DL window. \\
+\hline
+{\em h} & The screen height of the S\+DL window. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{class_s_d_l_graphics_program}{S\+D\+L\+Graphics\+Program}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a2504412e7eaa011a1116447eb4d5ec00}\label{class_s_d_l_graphics_program_a2504412e7eaa011a1116447eb4d5ec00}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!````~SDLGraphicsProgram@{$\sim$SDLGraphicsProgram}}
+\index{````~SDLGraphicsProgram@{$\sim$SDLGraphicsProgram}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{$\sim$SDLGraphicsProgram()}{~SDLGraphicsProgram()}}
+{\footnotesize\ttfamily S\+D\+L\+Graphics\+Program\+::$\sim$\+S\+D\+L\+Graphics\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The deconstuctor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_add4ecb861302c3e883e5630aa86221ce}\label{class_s_d_l_graphics_program_add4ecb861302c3e883e5630aa86221ce}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!addShape@{addShape}}
+\index{addShape@{addShape}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{addShape()}{addShape()}}
+{\footnotesize\ttfamily void S\+D\+L\+Graphics\+Program\+::add\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shape}{Shape}} $\ast$}]{q }\end{DoxyParamCaption})}
+
+
+
+Adds a shape to the physics engine. 
+
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a56942edfd4c5f45334ba55adb2558d35}\label{class_s_d_l_graphics_program_a56942edfd4c5f45334ba55adb2558d35}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!clear@{clear}}
+\index{clear@{clear}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void S\+D\+L\+Graphics\+Program\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the screen. 
+
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a299c62853b3f28fc3930880fc4c128ba}\label{class_s_d_l_graphics_program_a299c62853b3f28fc3930880fc4c128ba}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!delay@{delay}}
+\index{delay@{delay}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily void S\+D\+L\+Graphics\+Program\+::delay (\begin{DoxyParamCaption}\item[{int}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Delays the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em milliseconds} & The ms delay for each loop. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a1b2040042b2fc4bda09f365d7885e9a3}\label{class_s_d_l_graphics_program_a1b2040042b2fc4bda09f365d7885e9a3}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!flip@{flip}}
+\index{flip@{flip}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{flip()}{flip()}}
+{\footnotesize\ttfamily void S\+D\+L\+Graphics\+Program\+::flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a7710ed9e68081310be98527fa45fd5dd}\label{class_s_d_l_graphics_program_a7710ed9e68081310be98527fa45fd5dd}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!getOpenGLVersionInfo@{getOpenGLVersionInfo}}
+\index{getOpenGLVersionInfo@{getOpenGLVersionInfo}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{getOpenGLVersionInfo()}{getOpenGLVersionInfo()}}
+{\footnotesize\ttfamily void S\+D\+L\+Graphics\+Program\+::get\+Open\+G\+L\+Version\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a42e9554ec5b497551530bd5a8ca9585f}\label{class_s_d_l_graphics_program_a42e9554ec5b497551530bd5a8ca9585f}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!getSDLWindow@{getSDLWindow}}
+\index{getSDLWindow@{getSDLWindow}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{getSDLWindow()}{getSDLWindow()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window $\ast$ S\+D\+L\+Graphics\+Program\+::get\+S\+D\+L\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the S\+D\+L\+\_\+\+Window. 
+
+\begin{DoxyReturn}{Returns}
+The S\+D\+L\+\_\+\+Window of this \mbox{\hyperlink{class_s_d_l_graphics_program}{S\+D\+L\+Graphics\+Program}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a6cc65adc2dde4f2346839685c4e43ea9}\label{class_s_d_l_graphics_program_a6cc65adc2dde4f2346839685c4e43ea9}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!initGL@{initGL}}
+\index{initGL@{initGL}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{initGL()}{initGL()}}
+{\footnotesize\ttfamily bool S\+D\+L\+Graphics\+Program\+::init\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializer flag for \mbox{\hyperlink{class_s_d_l_graphics_program}{S\+D\+L\+Graphics\+Program}}. 
+
+\mbox{\Hypertarget{class_s_d_l_graphics_program_afdca0d5835b36a1b18d7eac69056c6ff}\label{class_s_d_l_graphics_program_afdca0d5835b36a1b18d7eac69056c6ff}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!loop@{loop}}
+\index{loop@{loop}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void S\+D\+L\+Graphics\+Program\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a118c0f825d3d2e8cb3fae0dc4ea1c13e}\label{class_s_d_l_graphics_program_a118c0f825d3d2e8cb3fae0dc4ea1c13e}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!renderShapes@{renderShapes}}
+\index{renderShapes@{renderShapes}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{renderShapes()}{renderShapes()}}
+{\footnotesize\ttfamily void S\+D\+L\+Graphics\+Program\+::render\+Shapes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws all the shapes in the physics engine. Delegates drawing to the shape type. 
+
+\mbox{\Hypertarget{class_s_d_l_graphics_program_aeb4a2f57b396a2a053a80ff0cc41149d}\label{class_s_d_l_graphics_program_aeb4a2f57b396a2a053a80ff0cc41149d}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!setPhysics@{setPhysics}}
+\index{setPhysics@{setPhysics}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{setPhysics()}{setPhysics()}}
+{\footnotesize\ttfamily void S\+D\+L\+Graphics\+Program\+::set\+Physics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics}{Physics}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Resets the physics engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{class_physics}{Physics}} engine to be set to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a67a6cb42ec9bce6245a617de62cfdc20}\label{class_s_d_l_graphics_program_a67a6cb42ec9bce6245a617de62cfdc20}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!update@{update}}
+\index{update@{update}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void S\+D\+L\+Graphics\+Program\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the logic of the physics engine. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_ad79474da1a537585fb5359786b0d8e5d}\label{class_s_d_l_graphics_program_ad79474da1a537585fb5359786b0d8e5d}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!pEngine@{pEngine}}
+\index{pEngine@{pEngine}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\subsubsection{\texorpdfstring{pEngine}{pEngine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_physics}{Physics}} S\+D\+L\+Graphics\+Program\+::p\+Engine}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project/\+Engine\+Library/include/\mbox{\hyperlink{_s_d_l_graphics_program_8h}{S\+D\+L\+Graphics\+Program.\+h}}\item 
+Project/\+Engine\+Library/src/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}
