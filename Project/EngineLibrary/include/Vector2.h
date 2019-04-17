@@ -3,9 +3,8 @@
 
 #include <cmath>
 
-// Vector2 performs vector operations with 2-dimensions
-// The purpose of this class is primarily for 2D graphics
-// applications.
+/*----Struct*/
+//Based on TinyMath library.
 struct Vector2{
     // Note: x,y,are a convention
     // x,y could be position, but also any 2-component value.

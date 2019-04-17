@@ -18,35 +18,38 @@ import random
 
 # Initialize SDL
 test = shard.SDLGraphicsProgram(400,400)
-
+physics = shard.Physics()
 # Our main game loop
 # Note: This is a simple game that loops for 20 iterations and then
 #       exits. 
 print("Setting up game loop")
-for i in range(0,20):
+#for i in range(0,20):
     # Clear the screen
     ##test.clear();
     # Generate random coordinates for our box
-    ax = random.randint(1,200)
-    ay = random.randint(1,200)
-    bx = random.randint(200,400)
-    by = random.randint(1,200)
-    cx = random.randint(1,200)
-    cy = random.randint(200,400)
-    dx = random.randint(200,400)
-    dy = random.randint(200,400)
+ax = random.randint(1,200)
+ay = random.randint(1,200)
+bx = random.randint(200,400)
+by = random.randint(1,200)
+cx = random.randint(1,200)
+cy = random.randint(200,400)
+dx = random.randint(200,400)
+dy = random.randint(200,400)
     
-    a = shard.Point(ax, ay)
-    b = shard.Point(bx, by)
-    c = shard.Point(cx, cy)
-    d = shard.Point(dx, dy)
+a = shard.Point(ax, ay)
+b = shard.Point(bx, by)
+c = shard.Point(cx, cy)
+d = shard.Point(dx, dy)
 
-    rect = shard.Quad(a, b, c, d)
+physics.pAddShape(shard.Quad(a, b, c, d))
+physics.pAddShape(shard.Quad(a, b, c, d))
 
-    test.DrawRectangle(rect)
+test.setPhysics(physics)
     
+test.update();
+
     # Add a little delay
-    test.delay(200);
+test.delay(2000);
     # Refresh the screen
-    test.flip();
+test.flip();
 

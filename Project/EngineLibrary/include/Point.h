@@ -2,6 +2,7 @@
 #ifndef POINT_H
 #define POINT_H
 
+/*----Class*/
 class Point
 {
 public:
@@ -10,6 +11,7 @@ public:
 	~Point() {};
 	Point(double x, double y);
 
+	/*Setter*/
 	void setX(int x);
 	void setY(int y);
 

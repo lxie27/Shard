@@ -1,9 +1,11 @@
 #pragma once
 #ifndef AABB_H
 #define AABB_H
-
+/*! \file
+*/
 #include "Vector2.h"
 
+/*----Class */
 class AABB {
 public:
 	Vector2 min;
