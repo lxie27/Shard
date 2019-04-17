@@ -1,0 +1,182 @@
+\hypertarget{class_shape}{}\section{Shape Class Reference}
+\label{class_shape}\index{Shape@{Shape}}
+
+
+{\ttfamily \#include $<$Shape.\+h$>$}
+
+Inheritance diagram for Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_shape}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_shape_a39fe45638d872f0ce9670d7f85290161}{$\sim$\+Shape}} ()=0
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_shape_a303c47b13b9339dc021e040bbba72651}{update}} ()=0
+\item 
+virtual \mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{class_shape_a01d3424af378ac4e8c423c57ccf836d1}{get\+Force}} ()
+\begin{DoxyCompactList}\small\item\em Getter for force. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_shape_a76d8009348239dbf7426ae54f19844d2}{set\+Force}} (\mbox{\hyperlink{struct_vector2}{Vector2}} \&f)
+\begin{DoxyCompactList}\small\item\em Setter for force. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_shape_a2fcffede033450a219278164b864e8a3}{add\+Force}} (\mbox{\hyperlink{struct_vector2}{Vector2}} \&f)
+\begin{DoxyCompactList}\small\item\em Adds given force to current force. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_shape_acec2178598665e96b85f1ac6a13a47b9}{get\+Area}} ()=0
+\item 
+virtual double \mbox{\hyperlink{class_shape_a3918812ff3a143dabbeba2f650fb5e7c}{get\+Perimeter}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} \mbox{\hyperlink{class_shape_a2490226328b30c113a7f07e2edda5f94}{get\+BB}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_shape_a540779eb247ef00e4fb262f1f81e90d4}{set\+BB}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_shape_a07881321ba401e7cdbd83b4f2b009e37}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)=0
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{class_shape_a6047166afe804fa01ab78362b438bbef}{force}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_shape_a39fe45638d872f0ce9670d7f85290161}\label{class_shape_a39fe45638d872f0ce9670d7f85290161}} 
+\index{Shape@{Shape}!````~Shape@{$\sim$Shape}}
+\index{````~Shape@{$\sim$Shape}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{$\sim$Shape()}{~Shape()}}
+{\footnotesize\ttfamily Shape\+::$\sim$\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Deconstructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shape_a2fcffede033450a219278164b864e8a3}\label{class_shape_a2fcffede033450a219278164b864e8a3}} 
+\index{Shape@{Shape}!addForce@{addForce}}
+\index{addForce@{addForce}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{addForce()}{addForce()}}
+{\footnotesize\ttfamily void Shape\+::add\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2}{Vector2}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds given force to current force. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The force to be set to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_quad_a1f0a30842d8b35a8402baa8bb76384ad}{Quad}}.
+
+\mbox{\Hypertarget{class_shape_acec2178598665e96b85f1ac6a13a47b9}\label{class_shape_acec2178598665e96b85f1ac6a13a47b9}} 
+\index{Shape@{Shape}!getArea@{getArea}}
+\index{getArea@{getArea}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily virtual double Shape\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_quad_abd7230629190e09ee3bdadefb6784320}{Quad}}, \mbox{\hyperlink{class_triangle_a19b449e6969b9288e189ced41c3aca40}{Triangle}}, and \mbox{\hyperlink{class_circle_a99fe1cbabbf3a9ccae51832376c5e8d4}{Circle}}.
+
+\mbox{\Hypertarget{class_shape_a2490226328b30c113a7f07e2edda5f94}\label{class_shape_a2490226328b30c113a7f07e2edda5f94}} 
+\index{Shape@{Shape}!getBB@{getBB}}
+\index{getBB@{getBB}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{getBB()}{getBB()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} Shape\+::get\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_quad_a8b7be43a01fb3263d36b0eb2f5961ccd}{Quad}}, \mbox{\hyperlink{class_triangle_a6f8c4358b9aa4de071618729547f4fd5}{Triangle}}, and \mbox{\hyperlink{class_circle_a7df161b9fa0dce04ed01f7924658faf3}{Circle}}.
+
+\mbox{\Hypertarget{class_shape_a01d3424af378ac4e8c423c57ccf836d1}\label{class_shape_a01d3424af378ac4e8c423c57ccf836d1}} 
+\index{Shape@{Shape}!getForce@{getForce}}
+\index{getForce@{getForce}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{getForce()}{getForce()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Shape\+::get\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Getter for force. 
+
+\begin{DoxyReturn}{Returns}
+Returns the force, delegated to concrete classes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shape_a3918812ff3a143dabbeba2f650fb5e7c}\label{class_shape_a3918812ff3a143dabbeba2f650fb5e7c}} 
+\index{Shape@{Shape}!getPerimeter@{getPerimeter}}
+\index{getPerimeter@{getPerimeter}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{getPerimeter()}{getPerimeter()}}
+{\footnotesize\ttfamily virtual double Shape\+::get\+Perimeter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_quad_a8d438e2844a4a155ed61addfab1a2868}{Quad}}, \mbox{\hyperlink{class_triangle_a692f12975e5a86c757f9d73c0228070e}{Triangle}}, and \mbox{\hyperlink{class_circle_afee5f4743c89e48e462e5f56aa605669}{Circle}}.
+
+\mbox{\Hypertarget{class_shape_a07881321ba401e7cdbd83b4f2b009e37}\label{class_shape_a07881321ba401e7cdbd83b4f2b009e37}} 
+\index{Shape@{Shape}!render@{render}}
+\index{render@{render}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void Shape\+::render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_quad_abc8023f3883c6fe4391e24418a4258ab}{Quad}}, \mbox{\hyperlink{class_triangle_a46ec1698397a34b08cd788e305dda75c}{Triangle}}, and \mbox{\hyperlink{class_circle_a7236be8080b9ab07f5c26e34aa17c9ae}{Circle}}.
+
+\mbox{\Hypertarget{class_shape_a540779eb247ef00e4fb262f1f81e90d4}\label{class_shape_a540779eb247ef00e4fb262f1f81e90d4}} 
+\index{Shape@{Shape}!setBB@{setBB}}
+\index{setBB@{setBB}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{setBB()}{setBB()}}
+{\footnotesize\ttfamily virtual void Shape\+::set\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_quad_a8707911fc752adad20b07a9a77f4ba0e}{Quad}}, \mbox{\hyperlink{class_triangle_a857d761fa1f0b53b355d46be53a4796e}{Triangle}}, and \mbox{\hyperlink{class_circle_ab33a020a2b85fbda10aa82c6e8c25327}{Circle}}.
+
+\mbox{\Hypertarget{class_shape_a76d8009348239dbf7426ae54f19844d2}\label{class_shape_a76d8009348239dbf7426ae54f19844d2}} 
+\index{Shape@{Shape}!setForce@{setForce}}
+\index{setForce@{setForce}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{setForce()}{setForce()}}
+{\footnotesize\ttfamily void Shape\+::set\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2}{Vector2}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Setter for force. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The force to be set to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_quad_a9adb3dc8ea14c8d1f5bf7492c5ba18f7}{Quad}}.
+
+\mbox{\Hypertarget{class_shape_a303c47b13b9339dc021e040bbba72651}\label{class_shape_a303c47b13b9339dc021e040bbba72651}} 
+\index{Shape@{Shape}!update@{update}}
+\index{update@{update}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Shape\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_quad_a5e8eed8827894a4cf680b827a90d9d28}{Quad}}, \mbox{\hyperlink{class_triangle_a7fbd07ca45c992b433e193f442993e54}{Triangle}}, and \mbox{\hyperlink{class_circle_aa978eeba0712d29dfae842733bf6c2c7}{Circle}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_shape_a6047166afe804fa01ab78362b438bbef}\label{class_shape_a6047166afe804fa01ab78362b438bbef}} 
+\index{Shape@{Shape}!force@{force}}
+\index{force@{force}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{force}{force}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2}{Vector2}} Shape\+::force}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project/\+Engine\+Library/include/\mbox{\hyperlink{_shape_8h}{Shape.\+h}}\item 
+Project/\+Engine\+Library/src/\mbox{\hyperlink{_shape_8cpp}{Shape.\+cpp}}\end{DoxyCompactItemize}

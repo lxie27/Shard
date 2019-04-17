@@ -1,0 +1,99 @@
+\hypertarget{class_physics}{}\section{Physics Class Reference}
+\label{class_physics}\index{Physics@{Physics}}
+
+
+{\ttfamily \#include $<$Physics.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_physics_a045c3788e28059d3920136499942490f}{$\sim$\+Physics}} ()
+\item 
+\mbox{\hyperlink{class_physics_a4b2ebc0a344f04f48d227c72f0d0fbda}{Physics}} ()
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_physics_a06eee33fdf21652830746d0900d4b401}{Physics}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ shapes)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \mbox{\hyperlink{class_physics_aa65295ddbbb7cdf44fa6273c028e3cb6}{get\+Shapes}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vector of pointers of shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_acff9e03cc4cff17239a8fb25a6ecbd76}{add\+Shape}} (\mbox{\hyperlink{class_shape}{Shape}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Adds the pointer to a \mbox{\hyperlink{class_shape}{Shape}} to shapes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_aaa8c532b63deb718c73aa0f3aaadccb4}{add\+Force}} (double force)
+\item 
+void \mbox{\hyperlink{class_physics_a309579d8a466dbcc36c6b4db136b1e9b}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates all shapes in the engine based on their force; delegates to the \mbox{\hyperlink{class_shape}{Shape}} implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_physics_a045c3788e28059d3920136499942490f}\label{class_physics_a045c3788e28059d3920136499942490f}} 
+\index{Physics@{Physics}!````~Physics@{$\sim$Physics}}
+\index{````~Physics@{$\sim$Physics}!Physics@{Physics}}
+\subsubsection{\texorpdfstring{$\sim$Physics()}{~Physics()}}
+{\footnotesize\ttfamily Physics\+::$\sim$\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_physics_a4b2ebc0a344f04f48d227c72f0d0fbda}\label{class_physics_a4b2ebc0a344f04f48d227c72f0d0fbda}} 
+\index{Physics@{Physics}!Physics@{Physics}}
+\index{Physics@{Physics}!Physics@{Physics}}
+\subsubsection{\texorpdfstring{Physics()}{Physics()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Physics\+::\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_physics}{Physics}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_a06eee33fdf21652830746d0900d4b401}\label{class_physics_a06eee33fdf21652830746d0900d4b401}} 
+\index{Physics@{Physics}!Physics@{Physics}}
+\index{Physics@{Physics}!Physics@{Physics}}
+\subsubsection{\texorpdfstring{Physics()}{Physics()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Physics\+::\+Physics (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$}]{shapes }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_aaa8c532b63deb718c73aa0f3aaadccb4}\label{class_physics_aaa8c532b63deb718c73aa0f3aaadccb4}} 
+\index{Physics@{Physics}!addForce@{addForce}}
+\index{addForce@{addForce}!Physics@{Physics}}
+\subsubsection{\texorpdfstring{addForce()}{addForce()}}
+{\footnotesize\ttfamily void Physics\+::add\+Force (\begin{DoxyParamCaption}\item[{double}]{force }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_physics_acff9e03cc4cff17239a8fb25a6ecbd76}\label{class_physics_acff9e03cc4cff17239a8fb25a6ecbd76}} 
+\index{Physics@{Physics}!addShape@{addShape}}
+\index{addShape@{addShape}!Physics@{Physics}}
+\subsubsection{\texorpdfstring{addShape()}{addShape()}}
+{\footnotesize\ttfamily void Physics\+::add\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shape}{Shape}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Adds the pointer to a \mbox{\hyperlink{class_shape}{Shape}} to shapes. 
+
+\mbox{\Hypertarget{class_physics_aa65295ddbbb7cdf44fa6273c028e3cb6}\label{class_physics_aa65295ddbbb7cdf44fa6273c028e3cb6}} 
+\index{Physics@{Physics}!getShapes@{getShapes}}
+\index{getShapes@{getShapes}!Physics@{Physics}}
+\subsubsection{\texorpdfstring{getShapes()}{getShapes()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ Physics\+::get\+Shapes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the vector of pointers of shape. 
+
+\begin{DoxyReturn}{Returns}
+Returns shapes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_a309579d8a466dbcc36c6b4db136b1e9b}\label{class_physics_a309579d8a466dbcc36c6b4db136b1e9b}} 
+\index{Physics@{Physics}!update@{update}}
+\index{update@{update}!Physics@{Physics}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Physics\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates all shapes in the engine based on their force; delegates to the \mbox{\hyperlink{class_shape}{Shape}} implementation. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Project/\+Engine\+Library/include/\mbox{\hyperlink{_physics_8h}{Physics.\+h}}\item 
+Project/\+Engine\+Library/src/\mbox{\hyperlink{_physics_8cpp}{Physics.\+cpp}}\end{DoxyCompactItemize}
