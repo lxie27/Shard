@@ -5,7 +5,7 @@ Shard is a niche Python physics library written in C++, binded with pybind11. Th
 * You can get the .pyd [here](./Project/EngineLibrary/shard.pyd) , right-click "Save Link As".
 * Manually build the binary by navigating to EngineLibrary and run "sh mingw64build.py" in MinGW.
 
-#Documentation
+## Documentation
 * Access documentation [here](https://github.com/lxie27/Shard/blob/gh-pages/Docs/html/index.html)
 
 ## Post Mortem
