@@ -1,3 +1,2 @@
-Modify this readme with instructions about how to run your project.
-
-All of your project work goes here--you may organize this folder as you need.
+* You can get the .pyd here , right-click “Save Link As”.
+* Manually build the binary by navigating to EngineLibrary and run “sh mingw64build.py” in MinGW.
